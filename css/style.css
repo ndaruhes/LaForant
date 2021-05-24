@@ -20,7 +20,7 @@ body {
     float: left;
 }
 
-.logo>img {
+.logo>a>img {
     width: 70%;
     margin: 0 15%;
 }
