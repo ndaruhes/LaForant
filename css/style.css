@@ -21,7 +21,7 @@
 
 /* AGENTS */
 .agents {
-    padding: 150px 0;
+    padding: 100px 0;
     justify-content: center;
     align-items: center;
 }
@@ -115,7 +115,7 @@
 
 /* COPYRIGHT */
 .copyright {
-    background: #2d3436;
+    background: black;
     color: white;
     font-weight: bold;
     padding: 20px 0;

@@ -44,6 +44,38 @@ body {
     position: relative;
 }
 
+.gold-btn {
+    border: 2px solid #FF9B00;
+    color: #FF9B00;
+    padding: 7px 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.gold-btn:hover {
+    background: #FF9B00;
+    color: white;
+    transition: 0.4s;
+}
+
+.red-btn {
+    border: 2px solid #C20100;
+    color: #C20100;
+    padding: 7px 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.red-btn:hover {
+    background: #C20100;
+    color: white;
+    transition: 0.4s;
+}
+
 .txt-gold {
     color: #FF9B00
 }
