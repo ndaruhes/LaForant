@@ -1,13 +1,14 @@
 /* HOME BACKGROUND */
 .home-background {
-    background: url('../images/assets/home-background.png') 100% 40%;
+    background: url('../images/assets/home-background.png') 100% 100%;
     height: 100vh;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 /* INTRO */
 .intro {
-    background: black;
+    background: url('../images/assets/introduction.jpg');
+    background-size: cover;
     width: 100%;
     float: left;
 }
@@ -21,13 +22,14 @@
 
 /* AGENTS */
 .agents {
+    width: 100%;
+    float: left;
     padding: 100px 0;
-    justify-content: center;
-    align-items: center;
 }
 
 .agent-image {
     width: 45%;
+    float: left;
 }
 
 .agent-image>img {
@@ -36,10 +38,9 @@
 
 .agent-text {
     width: 55%;
-    padding: 0 10%;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    float: left;
+    padding: 35px 10%;
+    box-sizing: border-box;
 }
 
 /* MAPS */
@@ -97,18 +98,25 @@
     justify-content: center;
 }
 
-.footer-column-link>ul {
+.footer-link-heading {
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.footer-column-link ul {
     list-style: none;
 }
 
-.footer-column-link>ul>li>a {
+.footer-column-link ul li a {
     text-decoration: none;
     color: white;
     display: block;
     padding: 7px 0;
 }
 
-.footer-column-link>ul>li>a:hover {
+.footer-column-link ul li a:hover {
     transition: 0.4s;
     color: #C20100;
 }
@@ -118,7 +126,7 @@
     background: black;
     color: white;
     font-weight: bold;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 .copyright a {
