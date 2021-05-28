@@ -1,81 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.break {
-    clear: both;
-}
-
-.content-wrapper {
-    width: 85%;
-    margin: 0 auto;
-}
-
-/* NAVBAR */
-.navbar {
-    width: 100%;
-    float: left;
-    padding: 5px 0;
-}
-
-.logo {
-    width: 10%;
-    margin-left: 5%;
-    float: left;
-}
-
-.logo>a>img {
-    width: 100%;
-}
-
-.menu {
-    width: 40%;
-    margin-left: 45%;
-    box-sizing: border-box;
-    float: left;
-}
-
-.menu>ul {
-    list-style: none;
-    padding: 11px 0;
-}
-
-.menu>ul>li {
-    display: inline;
-}
-
-.menu>ul>li>a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    padding: 7px 10px;
-}
-
-.menu>ul>li>a:hover {
-    border-radius: 10px 0 10px 0;
-    background: #FF4655;
-    color: white;
-    transition: 0.4s;
-}
-
-#register-menu {
-    border-radius: 10px;
-    background: #FF4655;
-    color: white;
-    margin-left: 100px;
-}
-
-#register-menu:hover {
-    transition: 0.4s;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 /* HOME BACKGROUND */
 .home-background {
     background: url('../images/assets/home-background.png') 100% 40%;
@@ -85,42 +7,120 @@ body {
 
 /* INTRO */
 .intro {
-    background: #340101;
-    padding: 50px 0;
+    background: black;
     width: 100%;
     float: left;
 }
 
 .intro-text {
-    width: 55%;
-    float: left;
-    padding: 15px 40px;
-    box-sizing: border-box;
-    color: white;
-}
-
-.intro-text>h3 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.intro-text>span {
-    font-size: 30px;
-}
-
-.intro-text>p {
-    font-size: 17px;
-    margin-top: 10px;
-}
-
-.intro-image {
-    width: 45%;
-    float: left;
-    display: flex;
+    width: 50%;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
 
-.intro-image>img {
+/* AGENTS */
+.agents {
+    padding: 150px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.agent-image {
+    width: 45%;
+}
+
+.agent-image>img {
     width: 100%;
+}
+
+.agent-text {
+    width: 55%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* MAPS */
+.maps {
+    background: url('../images/maps/BFHL_chinatown.png') 100% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.map-text {
+    width: 45%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+
+.footer-column {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer-column>a>img {
+    width: 100%;
+}
+
+.socmed {
+    margin-top: 10px;
+}
+
+.socmed>a>img {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.footer-column-link {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column-link>ul {
+    list-style: none;
+}
+
+.footer-column-link>ul>li>a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 7px 0;
+}
+
+.footer-column-link>ul>li>a:hover {
+    transition: 0.4s;
+    color: #C20100;
+}
+
+/* COPYRIGHT */
+.copyright {
+    background: #2d3436;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.copyright a {
+    text-decoration: none;
 }

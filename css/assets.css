@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* BAHAN */
+.break {
+    clear: both;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content-slogan {
+    font-size: 30px;
+}
+
+.content-paragraph {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.txt-gold {
+    color: #FF9B00
+}
+
+.txt-red {
+    color: #C20100;
+}
+
+.txt-white {
+    color: white
+}
