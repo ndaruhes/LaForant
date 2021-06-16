@@ -5,47 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaForant - First Person Shooter Game</title>
-    <link rel="stylesheet" href="css/assets.css">
+    <title>LaForant | First Person Shooter Game</title>
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">
-            <a href="#"><img src="images/assets/logo.png"></a>
+            <a href="./"><img src="images/assets/logo.png"></a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="./" class="navbar-link"><i class="uil uil-estate mright-1"></i>Home</a></li>
                 <li class="position-relative dropdown">
-                    <a href="#">Game Info &nbsp; &#11167;</a>
+                <li><a href="pages/requirements.html" class="navbar-link"><i class="uil uil-laptop mright-1"></i>Requirements</a></li>
+                <li><a href="pages/agents.html" class="navbar-link"><i class="uil uil-robot mright-1"></i>Agents</a></li>
+                <li><a href="pages/maps.html" class="navbar-link"><i class="uil uil-map mright-1"></i>Maps</a></li>
+                <li class="position-relative dropdown">
+                    <a href="#" class="navbar-link"><i class="uil uil-globe mright-1"></i>Our Social <i class="uil uil-angle-down mleft-1"></i></a>
                     <div class="nav-dropdown">
                         <ul>
-                            <li><a href="#">Requirements</a></li>
+                            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                            <li><a href="https://youtube.com/" target="_blank">YouTube</a></li>
+                            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                            <li><a href="https://instagram.com/" target="_blank">Facebook</a></li>
+                            <li><a href="https://whatsapp.com/" target="_blank">Whatsapp</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Agents</a></li>
-                <li><a href="#">Maps</a></li>
-                <li class="position-relative dropdown">
-                    <a href="#">Our Social &nbsp; &#11167;</a>
-                    <div class="nav-dropdown">
-                        <ul>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">YouTube</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Whatsapp</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#" id="register-menu">Pre-Register</a></li>
+                <li><a href="pages/register.html" class="navbar-link"><i class="uil uil-user-md mright-1"></i>Pre-Register</a></li>
             </ul>
         </div>
         <div class="toggle-menu">
@@ -54,18 +45,38 @@
         </div>
     </div>
 
-    <!-- HOME BACKGROUND -->
-    <div class="home-background"></div>
+    <!-- OPENING -->
+    <div class="opening">
+        <div class="content-wrapper">
+            <div class="opening-image-mobile">
+                <img src="images/assets/opening-shadow.png" alt="LaForant Opening">
+            </div>
+            <div class="opening-text flex">
+                <div>
+                    <h3 class="opening-heading"><b>LaForant</b>, Indonesian First Person Shooter Game</h3>
+                    <p class="opening-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repellendus tempore magni accusantium animi ratione minima</p>
+                    <a href="#" class="btn-reg">Pre Register</a>
+                    <a href="#" class="btn-explore">Explore</a>
+                </div>
+            </div>
+            <div class="opening-image">
+                <img src="images/assets/opening-shadow.png" alt="LaForant Opening">
+            </div>
+        </div>
+    </div>
 
     <!-- LaForant INTRO -->
     <div class="intro">
         <div class="content-wrapper">
-            <div class="intro-text flex txt-white">
+            <div class="intro-image">
+                <img src="images/assets/intro.png" alt="LaForant Intro">
+            </div>
+            <div class="intro-text flex">
                 <div>
-                    <h3 class="content-heading txt-gold">WE ARE LAFORANT</h3>
+                    <h3 class="content-heading txt-red">We Are LaForant</h3>
                     <span class="content-slogan">Focus On Your Goal</span>
                     <p class="content-paragraph">Two armed groups of different backgrounds and thoughts are taken to an isolated place by a mysterious organization called 'Lafor'. They were told there were only 10 rounds in one game. Every one round, all groups will come back to life. One group has to think fast or they will be killed by the opponent. The biggest points will be won and may leave the game. Take on foes across Competitive and Unranked modes as well as Deathmatch. Feel a new style and experience in playing FPS games.</p>
-                </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -75,10 +86,10 @@
     <!-- AGENTS -->
     <div class="agents">
         <div class="content-wrapper">
-            <div class="agent-image">
-                <img src="images/agents/agents-home.png" alt="agents">
+            <div class="agent-image-mobile">
+                <img src="images/assets/agents.png" alt="agents">
             </div>
-            <div class="agent-text">
+            <div class="agent-text flex">
                 <div>
                     <h3 class="content-heading txt-red">OUR AGENTS</h3>
                     <span class="content-slogan">Persistance Is Your Greates Weapon</span>
@@ -86,15 +97,21 @@
                     <a href="#" class="red-btn">See More Agents</a>
                 </div>
             </div>
+            <div class="agent-image">
+                <img src="images/assets/agents.png" alt="agents">
+            </div>
         </div>
     </div>
 
     <br class="break">
 
     <!-- MAPS -->
-    <div class="maps flex txt-white">
-        <div class="map-text flex">
-            <div>
+    <div class="maps">
+        <div class="content-wrapper">
+            <div class="maps-image">
+                <img src="./images/assets/maps2.png" alt="maps">
+            </div>
+            <div class="maps-text">
                 <h3 class="content-heading txt-gold">OUR MAPS</h3>
                 <span class="content-slogan">Conquer The World</span>
                 <p class="content-paragraph">Each map is a playground to show the persistance of each group. Purpose-built for team strategies, spectacular plays, and clutch moments. Defeat all enemies, and conquer the world.</p>
@@ -147,15 +164,15 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <br class="break">
-
-    <div class="copyright">
-        <div class="content-wrapper">
-            &copy; 2021 <a href="#" class="txt-red">LaForant</a> | All Right Reserved
+        
+        <div class="copyright">
+            <div class="content-wrapper">
+                &copy; 2021 <a href="#" class="txt-red">LaForant</a> | All Right Reserved
+            </div>
         </div>
     </div>
+
+    
 
     <script src="js/main.js"></script>
 </body>
