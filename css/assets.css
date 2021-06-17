@@ -132,6 +132,7 @@ body {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .banner-paragraph {
@@ -163,5 +164,31 @@ body {
     .content-paragraph {
         font-size: 17px;
         margin-top: 20px;
+    }
+
+    /* BANNER */
+    .banner {
+        background: #F9F7F2;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        padding: 50% 0 40% 0;
+    }
+
+    .banner>div {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .banner-heading {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .banner-paragraph {
+        font-size: 15px;
+        text-align: center;
     }
 }

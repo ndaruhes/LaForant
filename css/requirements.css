@@ -1,0 +1,48 @@
+@import './assets.css';
+
+.requirements {
+    margin-bottom: 50px;
+}
+
+.page-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.requirement-item {
+    width: 30%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.requirement-item-content {
+    background: #2D3436;
+}
+
+.requirement-heading {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background: #C20100;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.requirement-item-content>p {
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .page-content-wrapper {
+        display: block;
+    }
+
+    .requirement-item {
+        width: 100%;
+        padding: 15px;
+    }
+}
