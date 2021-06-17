@@ -1,1 +1,114 @@
 @import url('./assets.css');
+
+.register {
+    padding-top: 15vh;
+    width: 100%;
+}
+
+.page-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.register-text {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.register-text h1 {
+    margin-bottom: 25px;
+}
+
+.register-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-wrapper {
+    width: 70%;
+    background: #F8F9FA;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form-heading {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.group-form {
+    margin-bottom: 15px;
+}
+
+.group-form>label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 7px;
+    font-size: 15px;
+}
+
+.form-error-feedback {
+    color: red;
+    font-size: 10px;
+    display: block;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    transition: 0.4s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.copyright {
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .register {
+        padding-top: 12vh;
+        width: 100%;
+    }
+
+    .page-content-wrapper {
+        align-content: start;
+    }
+
+    .register-text {
+        display: none;
+    }
+
+    .register-form {
+        width: 100%;
+    }
+
+    .form-heading {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        padding: 10px;
+        background: none;
+    }
+}

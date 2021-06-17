@@ -1,0 +1,56 @@
+@import url('./assets.css');
+
+.agents {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.agent-item {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.agent-item-content {
+    display: flex;
+    cursor: pointer;
+    background: #F8F9FA;
+    border-radius: 5px;
+}
+
+.agent-item-content:hover {
+    transition: 0.4s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.agent-image {
+    align-content: center;
+    width: 30%;
+}
+
+.agent-image>img {
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.agent-text {
+    width: 70%;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.agent-text p {
+    font-size: 17px;
+    color: #2C3E50;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.agent-text span {
+    font-size: 15px;
+    color: #2C3E50;
+}
