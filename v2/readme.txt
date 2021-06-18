@@ -1,8 +1,8 @@
 ## SOURCE CODE ##
-https://github.com/ndaruhes/LaForant
+https://github.com/ndaruhes/LaForant/v2
 
 ## DEPLOYMENT ##
-https://ndaruhes.github.io/LaForant
+https://ndaruhes.github.io/LaForant/v2
 
 ## 5 KIND VALIDATION IN THIS WEB ##
 1. Form required
