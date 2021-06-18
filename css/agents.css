@@ -1,13 +1,98 @@
 @import url('./assets.css');
 
+/* SLIDER */
+/* .main-container {
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: green;
+}
+
+.container {
+    width: 2000px;
+    margin: 0 auto;
+}
+
+.container div {
+    background: purple;
+    float: left;
+    width: 400px;
+}
+
+.container img {
+    width: 100%;
+} */
+
+/* AGENTS */
 .agents {
     width: 100%;
     float: left;
     margin-bottom: 50px;
 }
 
+.agent-slider-desktop {
+    width: 450px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.agent-slider-mobile {
+    display: none;
+}
+
+.slider-wrapper-desktop {
+    width: 2250px;
+}
+
+.slider-wrapper-desktop div {
+    width: 450px;
+    float: left;
+    display: flex;
+}
+
+.slider-wrapper-desktop img {
+    width: 100%;
+}
+
+.slider-controller {
+    font-size: 50px;
+    border: none;
+    background: none;
+    color: #2D3436;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.slider-controller:hover {
+    background: none;
+    color: black;
+}
+
+#prevDesktop,
+#prevMobile {
+    left: 0;
+}
+
+#nextDesktop,
+#nextMobile {
+    right: 0;
+}
+
+.agent-character {
+    width: 60%;
+    float: left;
+    padding-left: 30px;
+}
+
 .agent-item {
-    width: 25%;
+    width: 50%;
     float: left;
     padding: 0 10px;
     box-sizing: border-box;
@@ -56,7 +141,51 @@
 }
 
 @media screen and (max-width: 800px) {
+    .agent-slider-desktop {
+        display: none;
+    }
+
+    .agent-slider-mobile {
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .slider-wrapper-mobile {
+        width: 550px;
+    }
+
+    .slider-wrapper-mobile div {
+        width: 110px;
+        float: left;
+        display: flex;
+    }
+
+    .slider-wrapper-mobile img {
+        width: 100%;
+    }
+
+    .slider-controller {
+        background: rgba(45, 52, 54, 0.1);
+        color: white;
+    }
+
+    .slider-controller:hover {
+        background: rgba(45, 52, 54, 0.3);
+        color: white;
+    }
+
+    .agent-character {
+        width: 100%;
+        float: left;
+        padding-left: 0;
+    }
+
     .agent-item {
+        padding: 0;
         width: 100%;
     }
 }

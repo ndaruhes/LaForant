@@ -1,9 +1,9 @@
 // NAVBAR
-let navbar = document.querySelector('.navbar')
-let toggleMenu = document.querySelector('.toggle-menu')
-let menu = document.querySelector('.menu')
-let hamburger = document.querySelector('.hamburger')
-let cross = document.querySelector('.cross')
+let navbar = document.querySelector('.navbar'),
+    toggleMenu = document.querySelector('.toggle-menu'),
+    menu = document.querySelector('.menu'),
+    hamburger = document.querySelector('.hamburger'),
+    cross = document.querySelector('.cross');
 
 window.onscroll = function(){
     const yScroll = window.scrollY
@@ -23,21 +23,21 @@ toggleMenu.onclick = function(){
 
 
 // FORM VALIDATION
-let email = document.getElementById('email')
-let username = document.getElementById('username')
-let password = document.getElementById('password')
-let dob = document.getElementById('dob')
-let nationality = document.getElementById('nationality')
-let termCondition = document.getElementById('termCondition')
+let email = document.getElementById('email'),
+    username = document.getElementById('username'),
+    password = document.getElementById('password'),
+    dob = document.getElementById('dob'),
+    nationality = document.getElementById('nationality'),
+    termCondition = document.getElementById('termCondition');
 
-let emailFeedback = document.getElementById('email-feedback')
-let usernameFeedback = document.getElementById('username-feedback')
-let passwordFeedback = document.getElementById('password-feedback')
-let dobFeedback = document.getElementById('dob-feedback')
-let nationalityFeedback = document.getElementById('nationality-feedback')
-let termConditionFeedback = document.getElementById('termCondition-feedback')
+let emailFeedback = document.getElementById('email-feedback'),
+    usernameFeedback = document.getElementById('username-feedback'),
+    passwordFeedback = document.getElementById('password-feedback'),
+    dobFeedback = document.getElementById('dob-feedback'),
+    nationalityFeedback = document.getElementById('nationality-feedback'),
+    termConditionFeedback = document.getElementById('termCondition-feedback');
 
-let alertNotification = document.getElementById('alert-notification')
+let alertNotification = document.getElementById('alert-notification');
 
 function showAlertError(){
     alertNotification.style.background = '#e74c3c'
@@ -58,9 +58,9 @@ function showAlertSuccess(){
 }
 
 function validateEmail(){
-    let emailVal = email.value;
-    let at = emailVal.indexOf("@");
-    let dot = emailVal.lastIndexOf(".");
+    let emailVal = email.value,
+        at = emailVal.indexOf("@"),
+        dot = emailVal.lastIndexOf(".");
 
     if(email.value == ''){
         emailFeedback.innerText = 'email is required'
