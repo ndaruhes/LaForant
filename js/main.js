@@ -162,3 +162,9 @@ function validate(){
         showAlertSuccess()
     }
 }
+
+let preRegisterForm = document.getElementById('preRegisterForm')
+preRegisterForm.onsubmit = (e) => {
+    e.preventDefault();
+    validate()
+}
