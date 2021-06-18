@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eeeae6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d3436;
+}
+
+
+/* BAHAN */
+.break {
+    clear: both;
+}
+
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-heading {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.content-slogan {
+    font-size: 25px;
+}
+
+.content-paragraph {
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.gold-btn {
+    border: 2px solid #FF9B00;
+    color: #FF9B00;
+    padding: 7px 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.gold-btn:hover {
+    background: #FF9B00;
+    color: white;
+    transition: 0.4s;
+}
+
+.red-btn {
+    border: 2px solid #C20100;
+    color: #C20100;
+    padding: 7px 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.red-btn:hover {
+    background: #C20100;
+    color: white;
+    transition: 0.4s;
+}
+
+.txt-gold {
+    color: #FF9B00
+}
+
+.txt-red {
+    color: #C20100;
+}
+
+.txt-white {
+    color: white
+}
+
+
+@media screen and (max-width: 800px) {
+    .content-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content-heading {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .content-slogan {
+        font-size: 20px;
+    }
+
+    .content-paragraph {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+}
