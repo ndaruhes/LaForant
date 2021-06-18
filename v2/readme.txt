@@ -1,5 +1,5 @@
 ## SOURCE CODE ##
-https://github.com/ndaruhes/LaForant/v2
+https://github.com/ndaruhes/LaForant/tree/main/v2
 
 ## DEPLOYMENT ##
 https://ndaruhes.github.io/LaForant/v2
