@@ -37,6 +37,26 @@ let dobFeedback = document.getElementById('dob-feedback')
 let nationalityFeedback = document.getElementById('nationality-feedback')
 let termConditionFeedback = document.getElementById('termCondition-feedback')
 
+let alertNotification = document.getElementById('alert-notification')
+
+function showAlertError(){
+    alertNotification.style.background = '#e74c3c'
+    alertNotification.style.opacity = 1
+    alertNotification.innerHTML = `<i class="uil uil-confused mright-1"></i> Please fill in the form correctly`
+    setTimeout(() => {
+        alertNotification.style.opacity = 0
+    }, 1500);
+}
+
+function showAlertSuccess(){
+    alertNotification.style.background = '#2ecc71'
+    alertNotification.style.opacity = 1
+    alertNotification.innerHTML = `<i class="uil uil-grin mright-1"></i> Succesfully register`
+    setTimeout(() => {
+        alertNotification.style.opacity = 0
+    }, 1500);
+}
+
 function validateEmail(){
     let emailVal = email.value;
     let at = emailVal.indexOf("@");
@@ -50,9 +70,6 @@ function validateEmail(){
         return false;
     }else if(email.value.length < 5){
         emailFeedback.innerText = 'email min 5 character'
-        return false
-    }else if(email.value.length > 20){
-        emailFeedback.innerText = 'email max 20 character'
         return false
     }
     return true    
@@ -69,6 +86,8 @@ function validateUsername(){
         usernameFeedback.innerText = 'username max 20 character'
         return false
     }
+
+    return true
 }
 
 function validatePassword(){
@@ -78,10 +97,12 @@ function validatePassword(){
     }else if(password.value.length < 5){
         passwordFeedback.innerText = 'password min 5 character'
         return false
-    }else if(password.value.length > 20){
+    }else if(password.value.length > 25){
         passwordFeedback.innerText = 'password max 20 character'
         return false
     }
+
+    return true
 }
 
 function validateDOB(){
@@ -89,6 +110,8 @@ function validateDOB(){
         dobFeedback.innerText = 'date of birth is invalid'
         return false
     }
+
+    return true
 }
 
 function validateNationality(){
@@ -101,7 +124,12 @@ function validateNationality(){
     }else if(nationality.value.length > 20){
         nationalityFeedback.innerText = 'nationality max 20 character'
         return false
+    }else if(nationality.value[0] != nationality.value[0].toUpperCase()){
+        nationalityFeedback.innerText = 'first letter word must a capital letter'
+        return false
     }
+
+    return true
 }
 
 function validateTermCondition(){
@@ -109,6 +137,8 @@ function validateTermCondition(){
         termConditionFeedback.innerText = '*required'
         return false
     }
+
+    return true
 }
 
 function validate(){
@@ -125,4 +155,10 @@ function validate(){
     validateDOB()
     validateNationality()
     validateTermCondition()
+
+    if(!validateEmail() || !validateUsername() || !validatePassword() || !validateDOB() || !validateNationality() || !validateTermCondition()){
+        showAlertError()
+    }else{
+        showAlertSuccess()
+    }
 }
