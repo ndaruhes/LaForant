@@ -1,29 +1,5 @@
 @import url('./assets.css');
 
-/* SLIDER */
-/* .main-container {
-    width: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: green;
-}
-
-.container {
-    width: 2000px;
-    margin: 0 auto;
-}
-
-.container div {
-    background: purple;
-    float: left;
-    width: 400px;
-}
-
-.container img {
-    width: 100%;
-} */
-
-/* AGENTS */
 .agents {
     width: 100%;
     float: left;
