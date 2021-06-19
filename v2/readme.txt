@@ -1,3 +1,8 @@
+## NIM & NAMA ##
+1. Calvin Chen - 2440012781
+2. Muhamad Ndaru Hestiafin - 2440064766
+3. Samuel Willyanto - 2440028685
+
 ## SOURCE CODE ##
 https://github.com/ndaruhes/LaForant/tree/main/v2
 

@@ -75,6 +75,14 @@
     margin-bottom: 15px;
 }
 
+/* #cypher {
+    margin-bottom: 50px;
+}
+
+#phoenix {
+    margin-bottom: 100px;
+} */
+
 .agent-item-content {
     display: flex;
     cursor: pointer;
@@ -100,7 +108,7 @@
 .agent-text {
     width: 70%;
     align-items: center;
-    padding-left: 10px;
+    padding: 0 10px 0 10px;
     box-sizing: border-box;
 }
 
